@@ -14,6 +14,7 @@ namespace MCars.Data
             : base(options)
         {
         }
+        public DbSet<ServiceType> serviceTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
