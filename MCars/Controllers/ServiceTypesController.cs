@@ -29,6 +29,8 @@ namespace MCars.Controllers
         }
 
         //Post servicesTypes/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ServiceType serviceType)
         {
             if(ModelState.IsValid)
